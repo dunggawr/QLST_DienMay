@@ -84,7 +84,6 @@
         String soDienthoaiVal = request.getParameter("soDienthoai") != null ? request.getParameter("soDienthoai") : "";
         String emailVal = request.getParameter("email") != null ? request.getParameter("email") : "";
         String tenDangnhapVal = request.getParameter("tenDangnhap") != null ? request.getParameter("tenDangnhap") : "";
-        String ghiChuVal = request.getParameter("ghiChu") != null ? request.getParameter("ghiChu") : "";
     %>
 
     <form action="doDangki.jsp" method="POST" onsubmit="return validateForm();">
@@ -126,11 +125,6 @@
         <div class="form-group">
             <label for="xacNhanMatKhau">Xác nhận mật khẩu <span class="required">*</span>:</label>
             <input type="password" id="xacNhanMatKhau" name="xacNhanMatKhau" placeholder="Nhập lại mật khẩu" required>
-        </div>
-
-        <div class="form-group">
-            <label for="ghiChu">Ghi chú:</label>
-            <input type="text" id="ghiChu" name="ghiChu" value="<%= ghiChuVal %>" placeholder="Thông tin bổ sung (nếu có)">
         </div>
 
         <div class="btn-group">

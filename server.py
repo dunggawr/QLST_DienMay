@@ -301,7 +301,6 @@ function validateForm() {{
         <div class="form-group"><label>Tên đăng nhập <span class="required">*</span>:</label><input type="text" id="tenDangnhap" name="tenDangnhap" value="vudam94" required></div>
         <div class="form-group"><label>Mật khẩu <span class="required">*</span>:</label><input type="password" id="matKhau" name="matKhau" value="123456" required></div>
         <div class="form-group"><label>Xác nhận mật khẩu <span class="required">*</span>:</label><input type="password" id="xacNhanMatKhau" name="xacNhanMatKhau" value="123456" required></div>
-        <div class="form-group"><label>Ghi chú:</label><input type="text" id="ghiChu" name="ghiChu" value="Đăng ký mới"></div>
         <div class="btn-group">
             <a href="/view/khachhang/gdChinhKH.jsp" class="btn btn-back">Quay lại</a>
             <button type="submit" class="btn btn-submit">Đăng ký thành viên</button>
@@ -636,7 +635,7 @@ table th, table td {{ border: 1px solid #dee2e6; padding: 10px; text-align: cent
             email = form.get('email', [''])[0]
             tenDangnhap = form.get('tenDangnhap', [''])[0]
             matKhau = form.get('matKhau', [''])[0]
-            ghiChu = form.get('ghiChu', [''])[0]
+            ghiChu = None
 
             conn = sqlite3.connect(DB_FILE)
             c = conn.cursor()

@@ -14,7 +14,6 @@
     String email = request.getParameter("email");
     String tenDangnhap = request.getParameter("tenDangnhap");
     String matKhau = request.getParameter("matKhau");
-    String ghiChu = request.getParameter("ghiChu");
 
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     Date ngaySinh = null;
@@ -35,7 +34,6 @@
     kh.setEmail(email);
     kh.setTenDangnhap(tenDangnhap);
     kh.setMatKhau(matKhau);
-    kh.setGhiChu(ghiChu);
 
     KhachhangDAO khDAO = new KhachhangDAO();
 
