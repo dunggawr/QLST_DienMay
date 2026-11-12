@@ -4,6 +4,9 @@
 -- Theo chuẩn giáo trình PTIT (TS. Nguyễn Mạnh Hùng & ThS. Đỗ Thị Bích Ngọc)
 -- ====================================================================
 
+SET NAMES 'utf8mb4';
+SET CHARACTER SET utf8mb4;
+
 DROP DATABASE IF EXISTS qldst_dienmay;
 CREATE DATABASE qldst_dienmay CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE qldst_dienmay;

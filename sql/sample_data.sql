@@ -4,6 +4,9 @@
 -- Phục vụ chạy thử nghiệm hệ thống và kiểm thử đơn vị
 -- ====================================================================
 
+SET NAMES 'utf8mb4';
+SET CHARACTER SET utf8mb4;
+
 USE qldst_dienmay;
 
 -- 1. Tài khoản Thành viên: Nhân viên

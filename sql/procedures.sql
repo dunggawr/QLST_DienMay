@@ -4,6 +4,9 @@
 -- Theo chuẩn giáo trình PTIT (gọi qua CallableStatement trong DAO)
 -- ====================================================================
 
+SET NAMES 'utf8mb4';
+SET CHARACTER SET utf8mb4;
+
 USE qldst_dienmay;
 
 DELIMITER $$
