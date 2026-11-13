@@ -32,6 +32,9 @@ services:
       DB_PORT: 3306
       DB_USER: root
       DB_PASS: ""
+    volumes:
+      - ./WebContent/view:/usr/local/tomcat/webapps/ROOT/view
+      - ./WebContent/index.jsp:/usr/local/tomcat/webapps/ROOT/index.jsp
     depends_on:
       db:
         condition: service_healthy
